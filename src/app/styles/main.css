@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(75deg, #0e0e0e, #262626, 
+    #101010, #252525, #1a1a1a);
+    background-size: 300% 300%;
+    animation: gradient 30s ease infinite;
+    margin: 0;
+    overscroll-behavior: none;
+    color: white;
+    font-family: var(--satoshi)
+}
+
+h1 {
+    font-family: var(--koolegant);
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
