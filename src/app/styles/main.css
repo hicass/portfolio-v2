@@ -13,7 +13,7 @@ body {
     animation: gradient 30s ease infinite;
     margin: 0;
     overscroll-behavior: none;
-    color: rgb(239, 224, 217);
+    color: rgb(246, 242, 240);
     font-family: var(--satoshi);
     font-size: clamp(0.8rem, 1.4vw, 3rem);
     letter-spacing: 0.18em;
@@ -22,26 +22,44 @@ body {
 #nav-container {
     align-items: flex-end;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     position: sticky;
-    top: 90vh;
-    margin-right: 3%;
+    margin: 0 3%;
+    top: 5%;
 }
 
-nav > a {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .nav-link {
+            margin-bottom: 3%;
+            text-align: right;
+        }
+
+
+#socials-container {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.8rem, 2.5vw, 3rem);
+}
+
+a  {
     text-decoration: none;
-    color: rgb(239, 224, 217);
+    color: rgb(246, 242, 240);
 }
 
 #top {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin: 10% 10% 5%;
 }
 
     #name {
-        width: 80%;
+        width: 70%;
     }
 
         h1 {
@@ -65,14 +83,26 @@ h3 {
     font-size: clamp(0.8rem, 2.5vw, 3rem);
 }
 
-#about {
-    margin: 20% 15%;
+.content-area{
+    margin: 10% 20% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1.5em;
 }
 
+    .about-me-p {
+        margin-bottom: 3%;
+    }
+
+.skill-icon-container {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    font-size: clamp(0.8rem, 5vw, 4rem);
+    justify-items: center;
+    gap: 2%;
+    margin-top: 5%;
+}
 
 @keyframes gradient {
 	0% {
