@@ -3,7 +3,7 @@ import Image from 'next/image'
 import boops from '../../public/images/boops.png'
 import tendrils1 from '../../public/images/wave-tendrils.png'
 import tendrils2 from '../../public/images/tendrils.png'
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/Ai';
+import Nav from './components/Nav'
 import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
 import ContactSection from './components/ContactSection'
@@ -32,44 +32,12 @@ export default function Home() {
           </p>
         </section>
 
-        <div id='nav-container'>
-          <nav>
-            <a className='nav-link' href='#about'>about me</a>
-            <a className='nav-link' href='#skills'>my skills</a>
-            <a className='nav-link' href='#projects'>projects</a>
-            <a className='nav-link' href='https://docs.google.com/document/d/1Lab_5UAzTZFtO4_yt870kEugqLEtJbaHIQwj9QgAEz4/edit?usp=sharing'target='_blank'>resume</a>
-            <a className='nav-link' href='#contact'>contact</a>
-          </nav>
-
-          <div id='socials-container'>
-            <a 
-              href='https://github.com/hicass'
-              target='_blank'
-            >
-              <AiFillGithub />
-            </a>
-            <a 
-              href='https://www.linkedin.com/in/cass-walters/' 
-              target='_blank'
-            >
-              <AiFillLinkedin />
-            </a>
-            <a 
-              href='https://www.instagram.com/byeeecass/?hl=en'
-              target='_blank'
-            >
-              <AiFillInstagram />
-            </a>
-          </div>
-        </div>
-
+        <Nav />
         <AboutSection />
-
         <SkillsSection />
-
         <ContactSection />
-
       </div>
+      
         <GlowingCursor />
     </main>
   )
