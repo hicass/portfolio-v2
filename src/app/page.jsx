@@ -1,17 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { Fade, AttentionSeeker, Slide } from 'react-awesome-reveal'
 import boops from '../../public/images/boops.png'
 import tendrils1 from '../../public/images/wave-tendrils.png'
 import tendrils2 from '../../public/images/tendrils.png'
-import GlowingCursor from './components/GlowingCursor'
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/Ai';
 import AboutSection from './components/AboutSection'
-import { FaReact, FaGitAlt, FaCss3Alt } from 'react-icons/fa';
-import { BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoPython, BiLogoDjango } from 'react-icons/Bi';
-import { TbBrandNextjs } from 'react-icons/Tb';
-import { AiFillHtml5, AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/Ai';
-import { DiPostgresql } from 'react-icons/Di';
-import { SiExpress } from 'react-icons/Si';
+import SkillsSection from './components/SkillsSection'
+import GlowingCursor from './components/GlowingCursor'
 import './styles/main.css'
 
 
@@ -69,28 +64,7 @@ export default function Home() {
 
         <AboutSection />
 
-        <section id='skills' className='content-area'>
-          <Slide direction='left' triggerOnce='true'>
-            <h3>skills</h3>
-          </Slide>
-
-          <Slide direction='right' triggerOnce='true'>
-            <div className='skill-icon-container'>
-              <FaReact />
-              <TbBrandNextjs />
-              <BiLogoJavascript />
-              <FaGitAlt />
-              <AiFillHtml5 />
-              <FaCss3Alt />
-              <BiLogoNodejs />
-              <BiLogoMongodb />
-              <BiLogoPython />
-              <BiLogoDjango />
-              <DiPostgresql />
-              <SiExpress />
-            </div>
-          </Slide>
-        </section>
+        <SkillsSection />
 
         <section id='contact' className='content-area'>
           <h3>Contact</h3>
