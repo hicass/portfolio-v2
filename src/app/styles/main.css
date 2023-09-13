@@ -344,7 +344,7 @@ body {
                 }
 
             .contact-form {
-                margin: 5%;
+                margin: 8% 5% 5%;
                 padding: 0 3%;
                 border-top: 1px solid #4a3f33;
                 background-color: #1d1c1b;
@@ -403,12 +403,27 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 5%;
+                    position: absolute;
+                    top: 12%;
+                    left: 33%;
+                    font-size: clamp(0.8rem, 1.15vw, 3rem);
                 }
 
                     .submit-icon {
                         font-size: clamp(0.8rem, 1.8vw, 3rem);
                     }
+
+                .email-input {
+                    margin-bottom: 8%;
+                }
+
+                #email-message {
+                    position: absolute;
+                    top: 42%;
+                    font-size: clamp(0.8rem, 0.8vw, 3rem);
+                    color: #625446;
+                    z-index: 3;
+                }
 
         .bot-boops {
             width: 100%;
@@ -434,7 +449,7 @@ body {
         font-size: clamp(0.8rem, 1vw, 1rem);
         color: #625446;
         position: absolute;
-        bottom: -25%;
+        bottom: -20%;
         padding: 0 5%;
     }
 

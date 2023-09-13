@@ -18,9 +18,9 @@ export default function Home() {
     <main>
       <div id='wrapper'>
         <section id='top'>
-            <Image src={boops} className='boops' id='top-boops'/>
-            <Image src={tendrils1} className='boops' id='top-tendrils1'/>
-            <Image src={tendrils2} className='boops' id='top-tendrils2'/>
+            <Image src={boops} className='boops' id='top-boops' alt='Background Decorations'/>
+            <Image src={tendrils1} className='boops' id='top-tendrils1' alt='Background Decorations'/>
+            <Image src={tendrils2} className='boops' id='top-tendrils2' alt='Background Decorations'/>
 
           <div id='name'>
             <h2>hi i'm</h2>
