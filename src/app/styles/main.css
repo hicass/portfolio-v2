@@ -379,6 +379,17 @@ body {
                         cursor: pointer;
                     }
 
+                .submit-confirmation {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 5%;
+                }
+
+                    .submit-icon {
+                        font-size: clamp(0.8rem, 1.8vw, 3rem);
+                    }
+
 .glowing-cursor {
     position: fixed;
     width: 1px;
