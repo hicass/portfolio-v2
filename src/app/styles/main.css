@@ -172,6 +172,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 0;
         }
 
             #projects-title {
@@ -306,6 +307,77 @@ body {
                                 padding-right: 2%;
                                 width: 100%;
                             }
+
+        #contact-contents {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            #contact-h3 {
+                display: flex;
+                align-items: center;
+            }
+
+                #email-icon {
+                    margin-left: 2%;
+                }
+
+            .contact-form {
+                margin: 5%;
+                padding: 0 3%;
+                border-top: 1px solid #4a3f33;
+                background-color: #1d1c1b;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                width: 50%;
+            }
+
+                .form-label {
+                    padding: 2% 0;
+                }
+
+                .form-input, textarea {
+                    background-color: transparent;
+                    color: #F6F2F0;
+                    font-size: clamp(0.8rem, 1.1vw, 1.3rem);
+                    padding: 0.7em;
+                    border-radius: 10px;
+                    border: 1px solid #4a3f33;
+                    font-family: inherit;
+                    letter-spacing: 0.1em;
+                    width: 95%;
+                }
+
+                textarea {
+                    height: 5vw;
+                    resize: none;
+                }
+
+                .form-input:focus, textarea:focus {
+                    outline: none;
+                    border-color: #988570;
+                }
+
+                .form-submit {
+                    border: 1px solid #4a3f33;
+                    background-color: #2e2c29;
+                    width: 10vw;
+                    font-family: inherit;
+                    color: #F6F2F0;
+                    font-size: inherit;
+                    margin: 5% 0;
+                    padding: 2%;
+                    border-radius: 10px;
+                    letter-spacing: inherit;
+                }
+
+                    .form-submit:hover {
+                        border-color: #988570;
+                        background-color: #3f3c39;
+                        cursor: pointer;
+                    }
 
 .glowing-cursor {
     position: fixed;
