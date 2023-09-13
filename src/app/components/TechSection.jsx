@@ -9,7 +9,7 @@ import { FaReact, FaGitAlt, FaCss3Alt } from 'react-icons/fa'
 
 export default function TechSection() {
     return (
-        <section id='skills' className='content-area'>
+        <section id='tech' className='content-area'>
           <Slide direction='left' triggerOnce='true'>
             <h3>tech</h3>
 

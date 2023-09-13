@@ -38,6 +38,7 @@ export default function Home() {
         <TechSection />
         <ProjectsSection />
         <ContactSection />
+        
       </div>     
       <GlowingCursor />
     </main>

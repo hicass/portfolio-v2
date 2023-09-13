@@ -17,6 +17,8 @@ body {
     font-family: var(--satoshi);
     font-size: clamp(0.8rem, 1.4vw, 3rem);
     letter-spacing: 0.18em;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
     #wrapper {
@@ -24,6 +26,7 @@ body {
         overflow-x: hidden;
         perspective: 15px;
         height: 100vh;
+        position: relative;
     }
 
         #nav-container {
@@ -34,6 +37,7 @@ body {
             position: sticky;
             margin: 3%;
             top: 5%;
+            z-index: 2;
         }
 
             nav {
@@ -132,6 +136,10 @@ body {
                 margin-bottom: 3%;
             }
 
+            #tech {
+                margin-bottom: 15%;
+            }
+
             #tech-stack-p {
                 margin: 0;
             }
@@ -192,6 +200,7 @@ body {
                 scroll-padding: 5%;
                 -ms-overflow-style: none; 
                 scrollbar-width: none;
+                z-index: 2;
             }
 
             .project-card-container::-webkit-scrollbar {
@@ -254,6 +263,7 @@ body {
                                 padding: 1% 2%;
                                 margin: 0;
                                 font-size: clamp(0.8rem, 1.2vw, 1.3rem);
+                                line-height: 1.45em;
                             }
 
                             .project-img-back {
@@ -308,15 +318,25 @@ body {
                                 width: 100%;
                             }
 
+        #contact {
+            margin: 5% 0 0;
+            position: relative;
+            transform-style: preserve-3d;
+            width: 100%;
+            padding-top: 5%;
+        }
+
         #contact-contents {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 0 20%;
         }
 
             #contact-h3 {
                 display: flex;
                 align-items: center;
+                margin: 0 20%;
             }
 
                 #email-icon {
@@ -389,6 +409,34 @@ body {
                     .submit-icon {
                         font-size: clamp(0.8rem, 1.8vw, 3rem);
                     }
+
+        .bot-boops {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -35%;
+            z-index: -1;
+        }
+
+            #bot-boops {
+                transform: translateZ(-8px) translateY(-80px) scale(1.5);
+            }
+
+            #bot-tendrils1 {
+                transform: translateZ(-12px) scale(1.8);
+            }
+
+            #bot-tendrils2 {
+                transform: translateZ(-16px) scale(2.1);
+            }
+
+    #credit-text {
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        color: #625446;
+        position: absolute;
+        bottom: -25%;
+        padding: 0 5%;
+    }
 
 .glowing-cursor {
     position: fixed;

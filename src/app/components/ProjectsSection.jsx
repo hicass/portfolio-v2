@@ -14,9 +14,14 @@ export default function ProjectsSection() {
         <section id='projects' className='content-area'>
             <h3 id='projects-title'>projects</h3>
 
-            <div className='project-card-container'>
+            <p>
+                Here's a collection of the web development projects I've crafted and designed—a 
+                journey through my skills, creativity, and growth as a developer. Explore my work 
+                and witness the evolution of my digital creations.
+            </p>
 
-                <div className='project-card'>
+            <div className='project-card-container'>
+                <div className='project-card'> {/* Tag Ops */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={TagOps} className='project-img' />
@@ -26,10 +31,9 @@ export default function ProjectsSection() {
                         <div className='project-card-back'>
                             <Image src={TagOps} className='project-img project-img-back darken' />
                             <p className='project-description'>
-                                Designed and developed a modern, user-friendly website for Tag Ops, 
-                                a company specializing in operational support. Implemented responsive 
-                                design, clear pricing structures, and seamless user engagement features 
-                                to help them connect with their audience.
+                                Currently designing and developing a modern, user-friendly website for Tag Ops, 
+                                a company specializing in operational support. Implementing responsive 
+                                design, clear pricing structures, and seamless user engagement features. 
                             </p>
 
                             <a className='project-link-container' href='' target='_blank'>
@@ -54,7 +58,7 @@ export default function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='project-card'>
+                <div className='project-card'> {/* Chirp */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={Chirp} className='project-img' />
@@ -67,7 +71,8 @@ export default function ProjectsSection() {
                                 Chirp is a Twitter mock app designed specifically for complaining. 
                                 It uses an emotion analysis API to accept or reject posts based on 
                                 complaint-like sentiments, providing a dedicated space for venting 
-                                frustrations.
+                                frustrations. I developed and designed this project during my coding 
+                                bootcamp, conquering the challenge of building it in just five days.
                             </p>
 
                             <a className='project-link-container' href='https://chirpcw.herokuapp.com/' target='_blank'>
@@ -95,7 +100,7 @@ export default function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='project-card'>
+                <div className='project-card'> {/* Vintage Vault */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={VintageVault} className='project-img' />
@@ -105,9 +110,11 @@ export default function ProjectsSection() {
                         <div className='project-card-back'>
                             <Image src={VintageVault} className='project-img project-img-back darken' />
                             <p className='project-description'>
-                                Vintage Vault is a dynamic online app that seamlessly connects fashion buyers and 
-                                sellers, creating a marketplace for uniquefashion pieces. With Vintage Vault, users 
-                                have the power to give their previously loved clothing a new life by easily creating listings.
+                                Vintage Vault seamlessly connects fashion buyers and 
+                                sellers, creating a marketplace for uniquefashion pieces. Users 
+                                can give their previously loved clothing a new life by easily creating listings.
+                                Working in collaboration with two other developers during my coding bootcamp, we successfully 
+                                built this project within a week.
                             </p>
 
                             <a className='project-link-container' href='https://vintagevault.herokuapp.com/' target='_blank'>
@@ -133,7 +140,7 @@ export default function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='project-card'>
+                <div className='project-card'> {/* Plant Collector */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={PlantCollector} className='project-img' />
@@ -144,12 +151,13 @@ export default function ProjectsSection() {
                             <Image src={PlantCollector} className='project-img project-img-back darken' />
                             <p className='project-description'>
                                 Plant Collector is a minimalist Python project that helps users manage 
-                                their house plants effectively. It utilizes the Django framework for fast 
-                                application development and a PostgreSQL database for data storage. 
+                                their house plants effectively. Completed in less than a week during my 
+                                coding bootcamp, this project showcases my ability to learn quickly and 
+                                deliver under tight deadlines.
                             </p>
 
                             <a className='project-link-container' href='' target='_blank'>
-                                <h4 className='project-link'>Vintage Vault</h4>
+                                <h4 className='project-link'>Plant Collector</h4>
                             </a>
 
                             <div className='project-card-bottom'>
@@ -170,7 +178,7 @@ export default function ProjectsSection() {
                     </div>
                 </div>
                 
-                <div className='project-card'>
+                <div className='project-card'> {/* Mancala */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={Mancala} className='project-img' />
@@ -180,13 +188,15 @@ export default function ProjectsSection() {
                         <div className='project-card-back'>
                             <Image src={Mancala} className='project-img project-img-back' />
                             <p className='project-description'>
-                                A digital adaptation of the ancient board game. Two players take turns 
-                                strategically distributing the number of pebbles contained inside each 
+                                This project, Mancala, was my second endeavor in web development, demonstrating 
+                                my growing expertise and passion for crafting interactive experiences. Two players 
+                                take turns strategically distributing the number of pebbles contained inside each 
                                 of the pits counter-clockwise around the board, until there is a winner.
                             </p>
 
                             <a className='project-link-container' href='https://hicass.github.io/mancala/' target='_blank'>
                                 <h4 className='project-link'>Mancala</h4>
+                                <CgArrowsExpandUpRight />
                             </a>
 
                             <div className='project-card-bottom'>
@@ -205,7 +215,7 @@ export default function ProjectsSection() {
                     </div>
                 </div>
 
-                <div className='project-card'>
+                <div className='project-card'> {/* Tic Tac Toe */}
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={TicTacToe} className='project-img' />
@@ -215,13 +225,15 @@ export default function ProjectsSection() {
                         <div className='project-card-back'>
                             <Image src={TicTacToe} className='project-img project-img-back' />
                             <p className='project-description'>
-                                A modern electronic rendition of the classic board game, Tic Tac Toe.
-                                he objective is to be the first to form a horizontal, vertical, or diagonal 
+                                This was my inaugural project, a Tic Tac Toe game that marked the beginning of my 
+                                web development journey. A modern electronic rendition of the classic board game,
+                                the objective is to be the first to form a horizontal, vertical, or diagonal 
                                 line of three of your markers, thereby securing victory.
                             </p>
 
                             <a className='project-link-container' href='https://hicass.github.io/mancala/' target='_blank'>
-                                <h4 className='project-link'>Mancala</h4>
+                                <h4 className='project-link'>Tic Tac Toe</h4>
+                                <CgArrowsExpandUpRight />
                             </a>
 
                             <div className='project-card-bottom'>

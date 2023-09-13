@@ -1,5 +1,9 @@
+import Image from 'next/image'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import botBoops from '../../../public/images/bot-boops.png'
+import botTendrils1 from '../../../public/images/bot-wave-tendrils.png'
+import botTendrils2 from '../../../public/images/bot-tendrils.png'
 import { AiOutlineMail } from 'react-icons/Ai'
 import { BsSendCheck } from 'react-icons/Bs'
 
@@ -99,6 +103,15 @@ export default function ContactSection() {
         </div>
 
       </div>
+
+        <Image src={botBoops} className='bot-boops' id='bot-boops'/>
+        <Image src={botTendrils1} className='bot-boops' id='bot-tendrils1'/>
+        <Image src={botTendrils2} className='bot-boops' id='bot-tendrils2'/>
+
+        <p id='credit-text'>
+          Built and designed by yours truly, using Next.js and a handful of other technologies.
+          Check out the <a href='https://github.com/hicass/portfolio-v2'>source code</a> to learn more.
+        </p>
     </section>
     )
 }
