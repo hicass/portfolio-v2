@@ -5,7 +5,7 @@ import tendrils1 from '../../public/images/wave-tendrils.png'
 import tendrils2 from '../../public/images/tendrils.png'
 import Nav from './components/Nav'
 import AboutSection from './components/AboutSection'
-import SkillsSection from './components/SkillsSection'
+import TechSection from './components/TechSection'
 import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 import GlowingCursor from './components/GlowingCursor'
@@ -35,7 +35,7 @@ export default function Home() {
 
         <Nav />
         <AboutSection />
-        <SkillsSection />
+        <TechSection />
         <ProjectsSection />
         <ContactSection />
       </div>

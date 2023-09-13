@@ -6,7 +6,7 @@ export default function Nav() {
         <div id='nav-container'>
           <nav>
             <a className='nav-link' href='#about'>about me</a>
-            <a className='nav-link' href='#skills'>my skills</a>
+            <a className='nav-link' href='#skills'>tech</a>
             <a className='nav-link' href='#projects'>projects</a>
             <a className='nav-link' href='https://docs.google.com/document/d/1Lab_5UAzTZFtO4_yt870kEugqLEtJbaHIQwj9QgAEz4/edit?usp=sharing'target='_blank'>resume</a>
             <a className='nav-link' href='#contact'>contact</a>
