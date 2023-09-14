@@ -2,18 +2,34 @@
     scroll-behavior: smooth !important;
 }
 
+:root {
+    --white: #F6F2F0;
+    --beige-1: #a89c90;
+    --beige-2: #988570;
+    --beige-3: #625446;
+    --brown: #4a3f33;
+    --brown-2: #2e2c29;
+    --brown-3: #3f3c39;
+    --dark-brown-1: #1d1c1b;
+    --dark-brown-2: #292520;
+    --black-1: #0e0e0e;
+    --black-2: #131212;
+    --black-3: #0b0b0a;
+    --black-4: #111111;
+}
+
 main {
     position: relative;
 }
 
 body {
-    background: linear-gradient(75deg, #0e0e0e, #131212, 
-    #0b0b0a, #1d1c1b, #111111);
+    background: linear-gradient(75deg, var(--black-1), var(--black-2), 
+    var(--black-3), var(--dark-brown-1), var(--black-4));
     background-size: 300% 300%;
     animation: gradient 30s ease infinite;
     margin: 0;
     overscroll-behavior: none;
-    color: #F6F2F0;
+    color: var(--white);
     font-family: var(--satoshi);
     font-size: clamp(0.6rem, 1.4vw, 3rem);
     letter-spacing: 0.18em;
@@ -52,7 +68,7 @@ body {
                 }
 
                 a:hover {
-                    color: #F6F2F0;
+                    color: var(--white);
                 }
 
 
@@ -64,7 +80,7 @@ body {
 
             a  {
                 text-decoration: none;
-                color: #a89c90;
+                color: var(--beige-1);
             }
 
         #top {
@@ -223,8 +239,8 @@ body {
                     }
 
                     .project-card:hover {
-                        border-top: 1px solid #4a3f33;
-                        background-color: #1d1c1b;
+                        border-top: 1px solid var(--brown);
+                        background-color: var(--dark-brown-1);
                     }
 
                         .project-card-content {
@@ -299,7 +315,7 @@ body {
                             }
 
                                 .tech-label {
-                                    background-color: #292520;
+                                    background-color: var(--dark-brown-2);
                                     padding: 0.05em 0.5em;
                                     border-radius: 1em;
                                     font-size: clamp(0.3rem, 0.7vw, 1rem);
@@ -349,8 +365,8 @@ body {
             .contact-form {
                 margin: 8% 5% 5%;
                 padding: 1% 5%;
-                border-top: 1px solid #4a3f33;
-                background-color: #1d1c1b;
+                border-top: 1px solid var(--brown);
+                background-color: var(--dark-brown-1);
                 display: flex;
                 flex-direction: column;
                 border-radius: 5px;
@@ -368,11 +384,11 @@ body {
 
                 .form-input, textarea {
                     background-color: transparent;
-                    color: #F6F2F0;
+                    color: var(--white);
                     font-size: clamp(0.7rem, 1.1vw, 1.3rem);
                     padding: 0.6em;
                     border-radius: 10px;
-                    border: 1px solid #4a3f33;
+                    border: 1px solid var(--brown);
                     font-family: inherit;
                     letter-spacing: 0.1em;
                     width: 95%;
@@ -385,15 +401,15 @@ body {
 
                 .form-input:focus, textarea:focus {
                     outline: none;
-                    border-color: #988570;
+                    border-color: var(--beige-2);
                 }
 
                 .form-submit {
-                    border: 1px solid #4a3f33;
-                    background-color: #2e2c29;
+                    border: 1px solid var(--brown);
+                    background-color: var(--brown-2);
                     width: 10vw;
                     font-family: inherit;
-                    color: #F6F2F0;
+                    color: var(--white);
                     font-size: inherit;
                     margin: 5% 0;
                     padding: 2%;
@@ -402,8 +418,8 @@ body {
                 }
 
                     .form-submit:hover {
-                        border-color: #988570;
-                        background-color: #3f3c39;
+                        border-color: var(--beige-2);
+                        background-color: var(--brown-3);
                         cursor: pointer;
                     }
 
@@ -429,7 +445,7 @@ body {
                     position: absolute;
                     top: 42%;
                     font-size: clamp(0.4rem, 1vw, 3rem);
-                    color: #625446;
+                    color: var(--beige-3);
                     z-index: 3;
                 }
 
@@ -455,7 +471,7 @@ body {
 
     #credit-text {
         font-size: clamp(0.5rem, 1vw, 1rem);
-        color: #625446;
+        color: var(--beige-3);
         position: absolute;
         bottom: -20%;
         padding: 0 5%;

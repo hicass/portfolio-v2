@@ -1,35 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'>
+    <Img alt='Logo' src='./src/app/favicon.ico' width='50px'/>
+</div>
+<h1 align='center'>
+  hicass.dev - v2
+</h1>
+<p align='center'>
+  The second version of <a href='https://www.hicass.dev/' target='_blank'>hicass.dev</a> built with <a href='https://nextjs.org/' target='_blank'>Next.js</a> and hosted with <a href='https://www.heroku.com/' target='_blank'>Heroku</a>
+</p>
 
-## Getting Started
+<div align='center'>
+    <Img alt='App Screen Shot' src='./public/images/readme.png'>
+</div>
 
-First, run the development server:
+
+## Tech Stack
+
+**Client:** 
+- [React](https://react.dev/)
+- [Next.Js](https://nextjs.org/)
+- [Email.Js](https://www.emailjs.com/)
+- [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+**Server:** Node
+- [Node](https://nodejs.org/en)
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| White | ![#F6F2F0](https://via.placeholder.com/10/F6F2F0f?text=+) #F6F2F0|
+| Lightest Beige | ![#625446](https://via.placeholder.com/10/a89c90?text=+) #a89c90 |
+| Darkest Beige| ![#625446](https://via.placeholder.com/10/625446?text=+) #625446 |
+| Lightest Brown | ![#4a3f33](https://via.placeholder.com/10/4a3f33?text=+) #4a3f33 |
+| Brown | ![#2e2c29](https://via.placeholder.com/10/2e2c29?text=+) #2e2c29 |
+| Darkest Brown | ![#292520](https://via.placeholder.com/10/292520?text=+) #292520 |
+| Lightest Black | ![#131212](https://via.placeholder.com/10/131212?text=+) #131212 |
+| Darkest Black | ![#0e0e0e](https://via.placeholder.com/10/0e0e0e?text=+) #0e0e0e |
+
+There are other colors in between these that were used, please view the main.css file in src/app/styles/main.css to see the full list.
+
+## Features
+
+- A comprehensive look into who I am as a Developer and the projects I have created.
+- Responsive Design.
+- Contact form with email verification and sent confirmation message.
+
+
+## Demo
+
+![Top of Page](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmptMWkzYmxnMmEwZzB5MmxzbmRvNzg2Z2o5ZjN6bmNieGxlcXc3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kiZZdKTFBHaET3bF3B/giphy.gif)
+
+![Website Content](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhpN2F6MGp4NGRoeG4wNXJwaWc5NWM5ZHo4Nm1raWV0NXFsdnJqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F9RmQdpiSCjehZwRvg/giphy.gif)
+
+![Contact Form](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlhejY3NHMyZWQzejVkMDV2emJmajkzdzlkZmo2Ym5sNWlsMDh6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tJOav7aSkkhbGGfD5Y/giphy.gif)
+
+
+## Environment Variables
+
+To get the contact form to work using [Email.Js](https://www.emailjs.com/), you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_EMAIL_KEY`
+
+If you have an Email.Js account you can use thid variable to reference your Public Key that can be found in your user profile.
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/hicass/portfolio-v2.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  cd portfolio-v2
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# portfolio-v2

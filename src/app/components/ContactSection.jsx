@@ -22,7 +22,8 @@ export default function ContactSection() {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('contact_service', 'contact_form', form.current, '-qDI4dvV-5_y28-od')
+    console.log(process.env.EMAIL_KEY)
+    emailjs.sendForm('contact_service', 'contact_form', form.current, process.env.NEXT_PUBLIC_EMAIL_KEY)
       .then((result) => {
         console.log(result)
         if (result.status === 200) {
