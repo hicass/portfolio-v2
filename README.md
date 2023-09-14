@@ -22,8 +22,11 @@
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
-**Server:** Node
+**Server:** 
 - [Node](https://nodejs.org/en)
+
+**Deployment:**
+- [Heroku](https://www.heroku.com/)
 
 ## Color Reference
 
