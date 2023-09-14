@@ -77,6 +77,7 @@ export default function ContactSection() {
 
       <div id='contact-contents'>
         <form className='contact-form' ref={form} onSubmit={sendEmail} noValidate>
+          <div className='form-div'>
             <label className='form-label'>Name</label>
             <input 
               className='form-input' 
@@ -87,7 +88,9 @@ export default function ContactSection() {
                 setFormValues({ ...formValues, name: e.target.value })
               }
             />
+          </div>
 
+          <div className='form-div'>
             <label className='form-label'>Email</label>
             <input 
               className='form-input email-input' 
@@ -106,6 +109,7 @@ export default function ContactSection() {
                 setFormValues({ ...formValues, message: e.target.value })
               }
             />
+          </div>
 
             <input 
               className='form-submit' 

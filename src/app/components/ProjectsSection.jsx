@@ -38,7 +38,6 @@ export default function ProjectsSection() {
 
                             <a className='project-link-container' href='' target='_blank'>
                                 <h4 className='project-link'>Tag Operations</h4>
-                                <CgArrowsExpandUpRight />
                             </a>
 
                             <div className='project-card-bottom'>
@@ -49,7 +48,7 @@ export default function ProjectsSection() {
                                     <p className='tech-label'>Heroku</p>
                                 </div>
 
-                                <a className='repo-link' href='' target='_blank'>
+                                <a className='repo-link' href='https://github.com/hicass/tag-ops' target='_blank'>
                                     <p className='repo-label'>view repo</p>
                                     <BsCodeSlash />
                                 </a>
@@ -131,7 +130,7 @@ export default function ProjectsSection() {
                                     <p className='tech-label'>PostgreSQL</p>
                                 </div>
 
-                                <a className='repo-link' href='https://github.com/hicass/chirp' target='_blank'>
+                                <a className='repo-link' href='https://github.com/hicass/vintagev' target='_blank'>
                                     <p className='repo-label'>view repo</p>
                                     <BsCodeSlash />
                                 </a>
@@ -231,7 +230,7 @@ export default function ProjectsSection() {
                                 line of three of your markers, thereby securing victory.
                             </p>
 
-                            <a className='project-link-container' href='https://hicass.github.io/mancala/' target='_blank'>
+                            <a className='project-link-container' href='https://hicass.github.io/Tic-Tac-Toe/' target='_blank'>
                                 <h4 className='project-link'>Tic Tac Toe</h4>
                                 <CgArrowsExpandUpRight />
                             </a>
@@ -243,7 +242,7 @@ export default function ProjectsSection() {
                                     <p className='tech-label'>JavaScript</p>
                                 </div>
 
-                                <a className='repo-link' href='https://github.com/hicass/mancala' target='_blank'>
+                                <a className='repo-link' href='https://github.com/hicass/Tic-Tac-Toe' target='_blank'>
                                     <p className='repo-label'>view repo</p>
                                     <BsCodeSlash />
                                 </a>

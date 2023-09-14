@@ -15,10 +15,11 @@ body {
     overscroll-behavior: none;
     color: #F6F2F0;
     font-family: var(--satoshi);
-    font-size: clamp(0.8rem, 1.4vw, 3rem);
+    font-size: clamp(0.6rem, 1.4vw, 3rem);
     letter-spacing: 0.18em;
     height: 100vh;
     overflow-x: hidden;
+    transition: all 0.9s;
 }
 
     #wrapper {
@@ -82,6 +83,7 @@ body {
                 top: 0;
                 left: 0;
                 z-index: -1;
+                transition: all 0.9s;
             }
 
                 #top-boops {
@@ -120,7 +122,7 @@ body {
 
         h3 {
             font-family: var(--koolegant);
-            font-size: clamp(0.8rem, 2.5vw, 3rem);
+            font-size: clamp(1rem, 2.5vw, 3rem);
             letter-spacing: 0.2em;
         }
 
@@ -191,16 +193,16 @@ body {
 
             .project-card-container {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 overflow-x: scroll;
                 max-width: 47vw;
-                min-height: 40vw;
                 gap: 5%;
                 scroll-snap-type: x mandatory;
                 scroll-padding: 5%;
                 -ms-overflow-style: none; 
                 scrollbar-width: none;
                 z-index: 2;
+                margin-top: 5%;
             }
 
             .project-card-container::-webkit-scrollbar {
@@ -262,7 +264,7 @@ body {
                                 position: absolute;
                                 padding: 1% 2%;
                                 margin: 0;
-                                font-size: clamp(0.8rem, 1.2vw, 1.3rem);
+                                font-size: clamp(0.4rem, 1.2vw, 1.3rem);
                                 line-height: 1.45em;
                             }
 
@@ -283,7 +285,8 @@ body {
 
                             .project-link {
                                 margin-right: 1%;
-                                margin-bottom: 0%;
+                                margin-bottom: 0%;    
+                                font-size: clamp(0.6rem, 1.4vw, 3rem);
                             }
 
                             .tech-container {
@@ -299,7 +302,7 @@ body {
                                     background-color: #292520;
                                     padding: 0.05em 0.5em;
                                     border-radius: 1em;
-                                    font-size: clamp(0.4rem, 0.7vw, 1rem);
+                                    font-size: clamp(0.3rem, 0.7vw, 1rem);
                                     letter-spacing: 0.1em;
                                     width: fit-content;
                                     margin: 2% 0;
@@ -313,7 +316,7 @@ body {
                         }
 
                             .repo-label {
-                                font-size: clamp(0.2rem, 1.2vw, 1rem);
+                                font-size: clamp(0.5rem, 1.2vw, 1rem);
                                 padding-right: 2%;
                                 width: 100%;
                             }
@@ -345,24 +348,29 @@ body {
 
             .contact-form {
                 margin: 8% 5% 5%;
-                padding: 0 3%;
+                padding: 1% 5%;
                 border-top: 1px solid #4a3f33;
                 background-color: #1d1c1b;
                 display: flex;
                 flex-direction: column;
                 border-radius: 5px;
-                width: 50%;
+                min-width: 50%;
+                max-width: 50%;
             }
 
+                .form-div{
+                    margin: 3% 0 1%;
+                }
+
                 .form-label {
-                    padding: 2% 0;
+                    padding: 5% 0;
                 }
 
                 .form-input, textarea {
                     background-color: transparent;
                     color: #F6F2F0;
-                    font-size: clamp(0.8rem, 1.1vw, 1.3rem);
-                    padding: 0.7em;
+                    font-size: clamp(0.7rem, 1.1vw, 1.3rem);
+                    padding: 0.6em;
                     border-radius: 10px;
                     border: 1px solid #4a3f33;
                     font-family: inherit;
@@ -406,11 +414,11 @@ body {
                     position: absolute;
                     top: 12%;
                     left: 33%;
-                    font-size: clamp(0.8rem, 1.15vw, 3rem);
+                    font-size: clamp(0.5rem, 1.15vw, 3rem);
                 }
 
                     .submit-icon {
-                        font-size: clamp(0.8rem, 1.8vw, 3rem);
+                        font-size: clamp(0.5rem, 1.8vw, 3rem);
                     }
 
                 .email-input {
@@ -420,7 +428,7 @@ body {
                 #email-message {
                     position: absolute;
                     top: 42%;
-                    font-size: clamp(0.8rem, 0.8vw, 3rem);
+                    font-size: clamp(0.4rem, 1vw, 3rem);
                     color: #625446;
                     z-index: 3;
                 }
@@ -446,7 +454,7 @@ body {
             }
 
     #credit-text {
-        font-size: clamp(0.8rem, 1vw, 1rem);
+        font-size: clamp(0.5rem, 1vw, 1rem);
         color: #625446;
         position: absolute;
         bottom: -20%;
@@ -505,6 +513,136 @@ body {
 
 .post-icon:hover {
     color: #336791;
+}
+
+@media screen and (max-width: 1105px) {
+    .boops {
+        top: -20%;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .boops {
+        top: -45%;
+    }
+
+    .project-card-container {
+        min-height: 45vw;
+    }
+
+        .project-card {
+            min-height: 29vw;
+        }
+
+    #email-message {
+        top: 43%;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    .boops {
+        top: -75%;
+    }
+
+    .project-card-container {
+        min-height: 45vw;
+    }
+
+        .project-card {
+            min-height: 36vw;
+        }
+
+        .project-img {
+            height: 20vw;
+        }
+
+    .contact-form {
+        min-width: 70%;
+        max-width: 70%;
+    }
+
+    #email-message {
+        top: 42%;
+    }
+
+    .submit-confirmation {
+        top: 10%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .boops {
+        top: -90%;
+    }
+
+    nav, #socials-container {
+        display: none;
+    }
+
+    .project-card-container {
+        min-height: 75vw;
+    }
+
+        .project-card {
+            min-height: 51vw;
+        }
+
+        .form-input, textarea {
+            width: 90%;
+            font-size: clamp(0.4rem, 0.2vw, 1.3rem);
+            border-radius: 0.5em;
+        }
+
+            .form-label {
+                    font-size: clamp(0.4rem, 1.4vw, 3rem);
+                }
+
+            .form-submit {
+                font-size: clamp(0.4rem, 1.4vw, 3rem);
+            }
+
+            #email-message {
+                top: 32%;
+            }
+}
+
+@media screen and (max-width: 530px) { 
+    .project-card-container {
+        max-width: 65vw;
+    }
+    
+    .project-card {
+        min-height: 59vw;
+    }
+
+        .project-link-container {
+            margin-top: 10%
+        }
+
+        .project-img {
+            height: 27vw;
+        }
+
+        #email-message {
+            top: 37%;
+        }
+
+        .submit-confirmation {
+            top: 8%;
+            left: 25%;
+        }
+}
+
+@media screen and (max-width: 530px) {
+    #email-message {
+        top: 36%;
+    }
+
+    .submit-confirmation {
+        top: -10%;
+        left: 20%;
+    }
 }
                     
 

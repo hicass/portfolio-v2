@@ -10,13 +10,13 @@ import { FaReact, FaGitAlt, FaCss3Alt } from 'react-icons/fa'
 export default function TechSection() {
     return (
         <section id='tech' className='content-area'>
-          <Slide direction='left' triggerOnce='true'>
+          <Slide direction='left' triggerOnce='true' fraction='1'>
             <h3>tech</h3>
 
             <p id='tech-stack-p'>Here are some of the technologies I have had the pleasure of working with so far:</p>
           </Slide>
 
-          <Slide direction='right' triggerOnce='true'>
+          <Slide direction='right' triggerOnce='true' fraction='1'>
             <div className='skill-icon-container'>
               <div className='react-icon icon-container'>
                 <FaReact />
