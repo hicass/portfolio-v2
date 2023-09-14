@@ -1,9 +1,9 @@
 import { Slide } from 'react-awesome-reveal'
-import { DiPostgresql } from 'react-icons/Di'
-import { SiExpress } from 'react-icons/Si'
-import { AiFillHtml5 } from 'react-icons/Ai'
-import { TbBrandNextjs } from 'react-icons/Tb'
-import { BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoPython, BiLogoDjango } from 'react-icons/Bi'
+import { DiPostgresql } from 'react-icons/di'
+import { SiExpress } from 'react-icons/si'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { BiLogoJavascript, BiLogoNodejs, BiLogoMongodb, BiLogoPython, BiLogoDjango } from 'react-icons/bi'
 import { FaReact, FaGitAlt, FaCss3Alt } from 'react-icons/fa'
 
 

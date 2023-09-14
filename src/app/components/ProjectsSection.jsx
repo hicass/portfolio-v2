@@ -5,8 +5,8 @@ import VintageVault from '../../../public/images/vintagevault.png'
 import PlantCollector from '../../../public/images/plantcollector.png'
 import Mancala from '../../../public/images/mancala.png'
 import TicTacToe from '../../../public/images/tictactoe.png'
-import { CgArrowsExpandUpRight } from 'react-icons/Cg'
-import { BsCodeSlash } from 'react-icons/Bs'
+import { CgArrowsExpandUpRight } from 'react-icons/cg'
+import { BsCodeSlash } from 'react-icons/bs'
 
 
 export default function ProjectsSection() {

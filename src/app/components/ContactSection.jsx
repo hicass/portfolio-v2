@@ -5,8 +5,8 @@ import validator from 'validator'
 import botBoops from '../../../public/images/bot-boops.png'
 import botTendrils1 from '../../../public/images/bot-wave-tendrils.png'
 import botTendrils2 from '../../../public/images/bot-tendrils.png'
-import { AiOutlineMail } from 'react-icons/Ai'
-import { BsSendCheck } from 'react-icons/Bs'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsSendCheck } from 'react-icons/bs'
 
 
 export default function ContactSection() {
