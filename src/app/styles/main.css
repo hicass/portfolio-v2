@@ -31,7 +31,7 @@ body {
     overscroll-behavior: none;
     color: var(--white);
     font-family: var(--satoshi);
-    font-size: clamp(0.6rem, 1.4vw, 3rem);
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
     letter-spacing: 0.18em;
     height: 100vh;
     overflow-x: hidden;
@@ -84,7 +84,7 @@ body {
                 }
 
             #top {
-                align-items: center;
+                align-items: flex-start;
                 display: flex;
                 flex-direction: column;
                 position: relative;
@@ -133,11 +133,13 @@ body {
                     }
 
                 #mid-bio {
-                    font-size: clamp(0.8rem, 2.3vw, 3rem);
+                    font-size: clamp(0.8rem, 3vw, 4rem);
+                    text-align: center;
+                    margin: 0;
                 }
 
                 
-            .content-area{
+            .content-area {
                 margin: 3% 20% 10%;
                 display: flex;
                 flex-direction: column;
@@ -147,7 +149,7 @@ body {
                 
                 h3 {
                     font-family: var(--koolegant);
-                    font-size: clamp(1rem, 2.5vw, 3rem);
+                    font-size: clamp(1.4rem, 4vw, 3rem);
                     letter-spacing: 0.2em;
                 }
 
@@ -364,7 +366,7 @@ body {
                                 }
 
                                 .contact-form {
-                                    margin: 8% 5% 5%;
+                                    margin: 0 5% 5%;
                                     padding: 1% 5%;
                                     border-top: 1px solid var(--brown);
                                     background-color: var(--dark-brown-1);
@@ -408,7 +410,7 @@ body {
                                     .form-submit {
                                         border: 1px solid var(--brown);
                                         background-color: var(--brown-2);
-                                        width: 10vw;
+                                        width: 6em;
                                         font-family: inherit;
                                         color: var(--white);
                                         font-size: inherit;
@@ -428,26 +430,33 @@ body {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
-                                position: absolute;
-                                top: 12%;
-                                left: 33%;
-                                font-size: clamp(0.5rem, 1.15vw, 3rem);
+                                font-size: clamp(0.8rem, 1.15vw, 3rem);
+                                margin-top: 2%;
                             }
 
                             .submit-icon {
-                                font-size: clamp(0.5rem, 1.8vw, 3rem);
+                                font-size: clamp(0.8rem, 1.8vw, 3rem);
                             }
 
-                                .email-input {
-                                    margin-bottom: 8%;
+                                .confirmation-msg {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
                                 }
 
+                                    .confirmation-txt {
+                                        margin: 0;
+                                    }
+
                                 #email-message {
-                                    position: absolute;
-                                    top: 42%;
-                                    font-size: clamp(0.4rem, 1vw, 3rem);
+                                    font-size: clamp(0.8rem, 1vw, 3rem);
                                     color: var(--beige-3);
                                     z-index: 3;
+                                    margin: 0;
+                                }
+
+                                .place-holder {
+                                    visibility: hidden;
                                 }
 
                 .bot-boops {
@@ -471,7 +480,7 @@ body {
                     }
 
                 #credit-text {
-                    font-size: clamp(0.5rem, 1vw, 1rem);
+                    font-size: clamp(0.7rem, 1vw, 1rem);
                     color: var(--beige-3);
                     position: absolute;
                     bottom: -20%;
@@ -611,32 +620,49 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+    body {
+        border: 1px solid #154c37;
+        font-size: clamp(1rem, 1.4vw, 3rem);
+        letter-spacing: 0.12em;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
     .boops {
         top: -145%;
     }
 
     #top {
-        margin: 0 5% 0;
+        margin: 0 10% 0;
     }
 
         #name {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
             h1 {
-                font-size: clamp(4rem, 12vw, 10rem);
+                font-size: clamp(5rem, 12vw, 10rem);
             }
 
             h2 {
-                font-size: clamp(1.7rem, 4vw, 5rem)
+                font-size: clamp(2rem, 4vw, 5rem)
             }
 
             h3 {
-                font-size: clamp(1.3rem, 2.5vw, 3rem);
+                font-size: clamp(2rem, 2.5vw, 3rem);
+                margin: 10% 0 5%;
+                text-align: center;
             }
 
         #mid-bio {
             font-size: clamp(1rem, 2.3vw, 3rem);
+            text-align: center;
+            margin-top: 0;
         }
 
     nav, #socials-container {
@@ -645,6 +671,8 @@ body {
 
     .content-area {
         margin: 3% 5% 10%;
+        letter-spacing: 0.14em;
+        line-height: 1.5em;
     }
 
         .icon-container {
@@ -652,41 +680,92 @@ body {
         }
 
         #projects {
-            padding-top: 5%;
+            padding-top: 10%;
+        }
+
+        #projects-title {
+            justify-content: center;
         }
 
         .project-card-container {
-            max-width: 95vw;
-            min-height: 77vw;
+            flex-direction: column;
+            min-width: 100%;
+            align-items: center;
         }
         
             .project-card {
-                min-height: 60vw;
+                height: fit-content;
+                max-height: none;
+                border-top: 1px solid var(--brown);
+                background-color: var(--dark-brown-1);
+                margin: 5%;
+                display: flex;
+                flex-direction: column;
             }
+
+                h4 {
+                    margin: 3% 0 3%;
+                }
 
                 .project-img {
                     height: 40vw;
+                    position: relative;
+                    margin-top: 3%;
                 }
+
+            .project-card-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .project-card:hover .project-card-content {
+                transform: none;
+            }
+
+            .project-card-front {
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+            }
+
+            .project-card-back {
+                position: relative;
+                transform: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .project-card-bottom {
+                margin-top: 3%;
+                display: flex;
+                align-items: flex-end;
+            }
 
                 .project-img-back {
                     visibility: hidden;
+                    display: none;
                 }
 
                 .project-description {
-                    font-size: clamp(0.6rem, 2.7vw, 3rem);
+                    font-size: clamp(0.9rem, 4.2vw, 300rem);
                     line-height: 1.25em;
+                    position: relative;
+                    padding: 5% 2%;
                 }
 
                 .project-link-container {
-                    margin-top: -3%;
+                    margin-top: 5%;
                 }
 
                     .project-link {
-                        font-size: clamp(0.6rem, 2.4vw, 3rem);
+                        font-size: clamp(1.2rem, 2.4vw, 3rem);
                     }
 
                     .repo-label {
-                        font-size: clamp(0.6rem, 2.3vw, 3rem);
+                        font-size: clamp(0.8rem, 2.3vw, 3rem);
                         margin: 1% 0;
                     }
 
@@ -696,7 +775,7 @@ body {
                 }
 
                     .tech-label {
-                        font-size: clamp(0.4rem, 2vw, 3rem);
+                        font-size: clamp(0.8rem, 2vw, 3rem);
                     }
 
             #email-message {
@@ -714,17 +793,16 @@ body {
 
             .form-input, textarea {
                 width: 90%;
-                font-size: clamp(0.6rem, 0.2vw, 1.3rem);
+                font-size: clamp(1rem, 0.2vw, 1.3rem);
                 border-radius: 0.5em;
             }
 
                 .form-label {
-                        font-size: clamp(0.7rem, 1.4vw, 3rem);
+                        font-size: clamp(1.2rem, 1.4vw, 3rem);
                     }
 
                 .form-submit {
-                    font-size: clamp(0.7rem, 1.4vw, 3rem);
-                    width: 15vw;
+                    font-size: clamp(1.2rem, 1.4vw, 3rem);
                 }
 
                 #email-message {

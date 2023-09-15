@@ -24,7 +24,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={TagOps} className='project-img' />
-                            <h4>Tag Operations</h4>
+                            <h4 className='mobile-hide'>Tag Operations</h4>
                         </div>
 
                         <div className='project-card-back'>
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={Chirp} className='project-img' />
-                            <h4>Chirp</h4>
+                            <h4 className='mobile-hide'>Chirp</h4>
                         </div>
 
                         <div className='project-card-back'>
@@ -102,7 +102,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={VintageVault} className='project-img' />
-                            <h4>Vintage Vault</h4>
+                            <h4 className='mobile-hide'>Vintage Vault</h4>
                         </div>
 
                         <div className='project-card-back'>
@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={PlantCollector} className='project-img' />
-                            <h4>Plant Collector</h4>
+                            <h4 className='mobile-hide'>Plant Collector</h4>
                         </div>
 
                         <div className='project-card-back'>
@@ -180,7 +180,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={Mancala} className='project-img' />
-                            <h4>Mancala</h4>
+                            <h4 className='mobile-hide'>Mancala</h4>
                         </div>
 
                         <div className='project-card-back'>
@@ -217,7 +217,7 @@ export default function ProjectsSection() {
                     <div className='project-card-content'>
                         <div className='project-card-front'>
                             <Image src={TicTacToe} className='project-img' />
-                            <h4>Tic Tac Toe</h4>
+                            <h4 className='mobile-hide'>Tic Tac Toe</h4>
                         </div>
 
                         <div className='project-card-back'>

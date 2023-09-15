@@ -28,8 +28,7 @@ export default function Home() {
           </div>
 
           <p id='mid-bio'>
-            I am a Software Developer who weaves<br /> 
-            code and dreams into tangible realities.
+            I am a Software Developer who weaves code and dreams into tangible realities.
           </p>
         </section>
 

@@ -42,7 +42,7 @@ export default function ContactSection() {
         message: ''
       })
       setEmailMessage('')
-      setTimeout(() => setFormSubmitted(false), 7000)
+     {/* setTimeout(() => setFormSubmitted(false), 7000) */}
     }
 
   const validateEmail = (e) => {
@@ -65,14 +65,21 @@ export default function ContactSection() {
     <section id='contact' className='content-area'>
       <h3 id='contact-h3'>Contact <AiOutlineMail id='email-icon'/></h3>
 
-     {  formSubmitted && 
-        <div className='submit-confirmation'>
-          <BsSendCheck className='submit-icon' />
-          <p>
-            Thank you for reaching out, talk to you soon!
-          </p>
-        </div>
-      }
+      <div className='submit-confirmation'>
+          { formSubmitted ? 
+            <div className='confirmation-msg'>
+              <BsSendCheck className='submit-icon' />
+              <p className='confirmation-txt'>
+                Thank you for reaching out, talk to you soon!
+              </p>
+            </div>
+            :
+            <div className='confirmation-msg'>
+            <span class='place-holder'>p</span> 
+            <span class='place-holder'>p</span> 
+            </div>
+          }       
+      </div>
 
 
       <div id='contact-contents'>
@@ -99,7 +106,7 @@ export default function ContactSection() {
               value={formValues.email}
               onChange={(e) => handleEmail(e)}
             />
-            <p id='email-message'>{emailMessage}</p>
+            <p id='email-message'><span className='place-holder'>p</span>{emailMessage}</p>
 
             <label className='form-label'>Message</label>
             <textarea 
