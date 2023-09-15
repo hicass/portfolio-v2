@@ -214,7 +214,7 @@ body {
                         display: flex;
                         align-items: flex-start;
                         overflow-x: scroll;
-                        max-width: 47vw;
+                        max-width: 50vw;
                         gap: 5%;
                         scroll-snap-type: x mandatory;
                         scroll-padding: 5%;
@@ -222,6 +222,7 @@ body {
                         scrollbar-width: none;
                         z-index: 2;
                         margin-top: 5%;
+                        min-height: 37vw;
                     }
 
                         .project-card-container::-webkit-scrollbar {
@@ -233,17 +234,10 @@ body {
                             }
 
                                 .project-card {
-                                    padding: 2% 3% 5%;
                                     border-radius: 5px;
                                     border-top: 1px solid transparent;
                                     transition: all 0.3s ease-in-out;
-                                    min-height: 25vw;
-                                    max-height: 25vw;
-                                }
-
-                                .project-card:hover {
-                                    border-top: 1px solid var(--brown);
-                                    background-color: var(--dark-brown-1);
+                                    width: fit-content;
                                 }
 
                                     .project-card-content {
@@ -274,6 +268,10 @@ body {
                                         left: 0;
                                         transform: rotateY(180deg);
                                         border-radius: 5px;
+                                        height: fit-content;
+                                        border-top: 1px solid var(--brown);
+                                        background-color: var(--dark-brown-1);
+                                        width: 100%;
                                     }
 
                                         .project-description {
@@ -281,10 +279,11 @@ body {
                                             top: 0;
                                             left: 0;
                                             position: absolute;
-                                            padding: 1% 2%;
+                                            padding: 3%;
                                             margin: 0;
-                                            font-size: clamp(0.4rem, 1.2vw, 1.3rem);
-                                            line-height: 1.45em;
+                                            font-size: clamp(0.4rem, 1.25vw, 2rem);
+                                            line-height: 1.3em;
+                                            letter-spacing: 0.2em;
                                         }
 
                                         .project-img-back {
@@ -300,12 +299,17 @@ body {
                                             display: flex;
                                             flex-direction: row;
                                             align-items: center;
+                                            padding: 3% 3% 0;
+                                        }
+
+                                        .repo-link {
+                                            padding: 0 3% 0 0;
                                         }
 
                                         .project-link {
                                             margin-right: 1%;
                                             margin-bottom: 0%;    
-                                            font-size: clamp(0.6rem, 1.4vw, 3rem);
+                                            font-size: clamp(0.8rem, 1.5vw, 3rem);
                                         }
 
                                             .tech-container {
@@ -315,13 +319,14 @@ body {
                                                 min-width: 18vw;
                                                 max-width: 18vw;
                                                 gap: 3%;
+                                                padding: 1% 0 3% 3%;
                                             }
 
                                                 .tech-label {
                                                     background-color: var(--dark-brown-2);
                                                     padding: 0.05em 0.5em;
                                                     border-radius: 1em;
-                                                    font-size: clamp(0.3rem, 0.7vw, 1rem);
+                                                    font-size: clamp(0.4rem, 0.9vw, 1rem);
                                                     letter-spacing: 0.1em;
                                                     width: fit-content;
                                                     margin: 2% 0;
@@ -331,17 +336,17 @@ body {
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: space-between;
-                                            align-items: center;
+                                            align-items: flex-end;
                                         }
 
                                             .repo-label {
-                                                font-size: clamp(0.5rem, 1.2vw, 1rem);
+                                                font-size: clamp(0.4rem, 1.1vw, 1rem);
                                                 padding-right: 2%;
                                                 width: 100%;
                                             }
 
                     #contact {
-                        margin: 5% 0 0;
+                        margin: 0;
                         position: relative;
                         transform-style: preserve-3d;
                         width: 100%;
@@ -480,7 +485,7 @@ body {
                     }
 
                 #credit-text {
-                    font-size: clamp(0.7rem, 1vw, 1rem);
+                    font-size: clamp(0.8rem, 1vw, 1rem);
                     color: var(--beige-3);
                     position: absolute;
                     bottom: -20%;
@@ -572,57 +577,9 @@ body {
     }
 }
 
-@media screen and (max-width: 750px) {
-    .boops {
-        top: -80%;
-    }
-}
-
-@media screen and (max-width: 643px) {
+@media screen and (max-width: 768px) {
     body {
-        font-size: clamp(0.8rem, 1.4vw, 3rem);
-        
-    }
-
-    .boops {
-        top: -120%;
-    }
-
-        .project-card-container {
-            min-height: 45vw;
-        }
-
-            .project-card {
-                min-height: 36vw;
-            }
-
-            .project-img {
-                height: 20vw;
-            }
-
-            .project-description {
-                font-size: clamp(0.5rem, 1.4vw, 3rem);
-            }
-
-        .contact-form {
-            min-width: 70%;
-            max-width: 70%;
-        }
-
-            #email-message {
-                top: 42%;
-            }
-
-            .submit-confirmation {
-                top: 10%;
-                left: 30%;
-            }
-}
-
-@media screen and (max-width: 530px) {
-    body {
-        border: 1px solid #154c37;
-        font-size: clamp(1rem, 1.4vw, 3rem);
+        font-size: clamp(1rem, 3vw, 3rem);
         letter-spacing: 0.12em;
     }
 
@@ -646,21 +603,21 @@ body {
         }
 
             h1 {
-                font-size: clamp(5rem, 12vw, 10rem);
+                font-size: clamp(5rem, 19vw, 10rem);
             }
 
             h2 {
-                font-size: clamp(2rem, 4vw, 5rem)
+                font-size: clamp(2rem, 8vw, 4rem)
             }
 
             h3 {
-                font-size: clamp(2rem, 2.5vw, 3rem);
+                font-size: clamp(2rem, 5vw, 3rem);
                 margin: 10% 0 5%;
                 text-align: center;
             }
 
         #mid-bio {
-            font-size: clamp(1rem, 2.3vw, 3rem);
+            font-size: clamp(1rem, 3.5vw, 1.6rem);
             text-align: center;
             margin-top: 0;
         }
@@ -676,11 +633,12 @@ body {
     }
 
         .icon-container {
-            font-size: clamp(2rem, 4vw, 8rem);
+            font-size: clamp(2rem, 7vw, 3.3rem);
         }
 
         #projects {
-            padding-top: 10%;
+            padding: 5%;
+            max-height: 130%;
         }
 
         #projects-title {
@@ -691,10 +649,11 @@ body {
             flex-direction: column;
             min-width: 100%;
             align-items: center;
+            
         }
         
             .project-card {
-                height: fit-content;
+                min-height: fit-content;
                 max-height: none;
                 border-top: 1px solid var(--brown);
                 background-color: var(--dark-brown-1);
@@ -708,7 +667,7 @@ body {
                 }
 
                 .project-img {
-                    height: 40vw;
+                    height: 35vw;
                     position: relative;
                     margin-top: 3%;
                 }
@@ -736,6 +695,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
+                border: 0;
             }
 
             .project-card-bottom {
@@ -750,10 +710,10 @@ body {
                 }
 
                 .project-description {
-                    font-size: clamp(0.9rem, 4.2vw, 300rem);
+                    font-size: clamp(0.9rem, 4.2vw, 1.4rem);
                     line-height: 1.25em;
                     position: relative;
-                    padding: 5% 2%;
+                    padding: 5% 10% 0;
                 }
 
                 .project-link-container {
@@ -761,17 +721,19 @@ body {
                 }
 
                     .project-link {
-                        font-size: clamp(1.2rem, 2.4vw, 3rem);
+                        font-size: clamp(1.2rem, 4vw, 1.9rem);
+                        padding-left: 10%;
                     }
 
                     .repo-label {
-                        font-size: clamp(0.8rem, 2.3vw, 3rem);
+                        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
                         margin: 1% 0;
                     }
 
                 .tech-container {
                     min-width: 45vw;
                     max-width: 45vw;
+                    padding-left: 10%;
                 }
 
                     .tech-label {
@@ -780,6 +742,10 @@ body {
 
             #email-message {
                 top: 37%;
+            }
+
+            #contact {
+                margin-top: 5%;
             }
 
             #contact-contents {
@@ -798,8 +764,8 @@ body {
             }
 
                 .form-label {
-                        font-size: clamp(1.2rem, 1.4vw, 3rem);
-                    }
+                    font-size: clamp(1.2rem, 1.4vw, 3rem);
+                }
 
                 .form-submit {
                     font-size: clamp(1.2rem, 1.4vw, 3rem);
@@ -824,7 +790,7 @@ body {
                 }
         
             #credit-text {
-                font-size: clamp(0.7rem, 1vw, 1rem);
+                font-size: clamp(0.7rem, 2.5vw, 1.2rem);
             }
 }
                  
