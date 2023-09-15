@@ -16,8 +16,7 @@ export default function ProjectsSection() {
 
             <p>
                 Here's a collection of the web development projects I've crafted and designed—a 
-                journey through my skills, creativity, and growth as a developer. Explore my work 
-                and witness the evolution of my digital creations.
+                journey through my skills, creativity, and growth as a developer. 
             </p>
 
             <div className='project-card-container'>
@@ -110,7 +109,7 @@ export default function ProjectsSection() {
                             <Image src={VintageVault} className='project-img project-img-back darken' />
                             <p className='project-description'>
                                 Vintage Vault seamlessly connects fashion buyers and 
-                                sellers, creating a marketplace for uniquefashion pieces. Users 
+                                sellers, creating a marketplace for unique fashion pieces. Users 
                                 can give their previously loved clothing a new life by easily creating listings.
                                 Working in collaboration with two other developers during my coding bootcamp, we successfully 
                                 built this project within a week.
