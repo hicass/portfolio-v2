@@ -42,7 +42,7 @@ export default function ContactSection() {
         message: ''
       })
       setEmailMessage('')
-     {/* setTimeout(() => setFormSubmitted(false), 7000) */}
+     setTimeout(() => setFormSubmitted(false), 7000)
     }
 
   const validateEmail = (e) => {
