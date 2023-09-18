@@ -32,7 +32,7 @@ export default function ContactSection() {
       }, (error) => {
           console.log(error.text)
       })
-    }
+  }
 
     const handleSubmit = () => {
       setFormSubmitted(true)
