@@ -490,6 +490,8 @@ body {
                     position: absolute;
                     bottom: -20%;
                     padding: 0 5%;
+                    text-align: center;
+                    width: 100%;
                 }
 
 .glowing-cursor {
@@ -599,7 +601,7 @@ body {
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
         }
 
             h1 {
@@ -636,11 +638,6 @@ body {
             font-size: clamp(2rem, 7vw, 3.3rem);
         }
 
-        #projects {
-            padding: 5%;
-            max-height: 130%;
-        }
-
         #projects-title {
             justify-content: center;
         }
@@ -655,11 +652,9 @@ body {
             .project-card {
                 min-height: fit-content;
                 max-height: none;
-                border-top: 1px solid var(--brown);
-                background-color: var(--dark-brown-1);
-                margin: 5%;
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 10%;
             }
 
                 h4 {
@@ -667,14 +662,14 @@ body {
                 }
 
                 .project-img {
-                    height: 35vw;
+                    height: 40vw;
                     position: relative;
                     margin-top: 3%;
                 }
 
             .project-card-content {
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 justify-content: flex-end;
                 align-items: center;
             }
@@ -696,7 +691,13 @@ body {
                 flex-direction: column;
                 justify-content: flex-end;
                 border: 0;
+                background: none;
             }
+
+                .project-card-back-top {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
 
             .project-card-bottom {
                 margin-top: 3%;
@@ -710,10 +711,9 @@ body {
                 }
 
                 .project-description {
-                    font-size: clamp(0.9rem, 4.2vw, 1.4rem);
+                    font-size: clamp(1rem, 3vw, 3rem);
                     line-height: 1.25em;
                     position: relative;
-                    padding: 5% 10% 0;
                 }
 
                 .project-link-container {
@@ -722,18 +722,16 @@ body {
 
                     .project-link {
                         font-size: clamp(1.2rem, 4vw, 1.9rem);
-                        padding-left: 10%;
                     }
 
                     .repo-label {
-                        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+                        font-size: clamp(1rem, 3vw, 3rem);
                         margin: 1% 0;
                     }
 
                 .tech-container {
                     min-width: 45vw;
                     max-width: 45vw;
-                    padding-left: 10%;
                 }
 
                     .tech-label {

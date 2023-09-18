@@ -75,8 +75,8 @@ export default function ContactSection() {
             </div>
             :
             <div className='confirmation-msg'>
-            <span class='place-holder'>p</span> 
-            <span class='place-holder'>p</span> 
+            <span className='place-holder'>p</span> 
+            <span className='place-holder'>p</span> 
             </div>
           }       
       </div>
