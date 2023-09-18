@@ -619,7 +619,7 @@ body {
             }
 
         #mid-bio {
-            font-size: clamp(1rem, 3.5vw, 1.6rem);
+            font-size: clamp(1rem, 5vw, 3rem);
             text-align: center;
             margin-top: 0;
         }
@@ -629,13 +629,17 @@ body {
     }
 
     .content-area {
-        margin: 3% 5% 10%;
+        margin: 10% 5% 10%;
         letter-spacing: 0.14em;
         line-height: 1.5em;
     }
 
         .icon-container {
             font-size: clamp(2rem, 7vw, 3.3rem);
+        }
+
+        #projects {
+            margin-top: 20%;
         }
 
         #projects-title {
@@ -654,7 +658,7 @@ body {
                 max-height: none;
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 10%;
+                margin-bottom: 15%;
             }
 
                 h4 {
@@ -714,10 +718,12 @@ body {
                     font-size: clamp(1rem, 3vw, 3rem);
                     line-height: 1.25em;
                     position: relative;
+                    padding: 3% 0 3%;
                 }
 
                 .project-link-container {
-                    margin-top: 5%;
+                    margin-top: 0;
+                    padding: 0;
                 }
 
                     .project-link {
@@ -730,8 +736,8 @@ body {
                     }
 
                 .tech-container {
-                    min-width: 45vw;
-                    max-width: 45vw;
+                    max-width: none;
+                    padding: 0;
                 }
 
                     .tech-label {
