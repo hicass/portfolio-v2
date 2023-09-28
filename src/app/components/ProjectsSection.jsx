@@ -25,7 +25,12 @@ export default function ProjectsSection() {
             {' '}
             {/* Tag Ops */}
             <div className="project-card-left">
-              <Image src={TagOps} className="project-img" alt="Screenshot of Tag Ops"/>
+              <Image
+                src={TagOps}
+                className="project-img"
+                alt="Screenshot of Tag Ops"
+                placeholder="blur"
+              />
               <div className="tech-container">
                 <p className="tech-label">React</p>
                 <p className="tech-label">JavaScript</p>
@@ -70,7 +75,12 @@ export default function ProjectsSection() {
             {' '}
             {/* Vintage Vault */}
             <div className="project-card-left">
-              <Image src={VintageVault} className="project-img" alt="Screenshot of Vintage Vault" />
+              <Image
+                src={VintageVault}
+                className="project-img"
+                alt="Screenshot of Vintage Vault"
+                placeholder="blur"
+              />
               <div className="tech-container">
                 <p className="tech-label">Python</p>
                 <p className="tech-label">Django</p>
@@ -119,7 +129,12 @@ export default function ProjectsSection() {
             {' '}
             {/* Chirp */}
             <div className="project-card-left">
-              <Image src={Chirp} className="project-img" alt="Screenshot of Chirp" />
+              <Image
+                src={Chirp}
+                className="project-img"
+                alt="Screenshot of Chirp"
+                placeholder="blur"
+              />
               <div className="tech-container">
                 <p className="tech-label">JavaScript</p>
                 <p className="tech-label">CSS</p>
@@ -169,7 +184,12 @@ export default function ProjectsSection() {
             {' '}
             {/* Mancala */}
             <div className="project-card-left">
-              <Image src={Mancala} className="project-img" alt="Screenshot of Mancala" />
+              <Image
+                src={Mancala}
+                className="project-img"
+                alt="Screenshot of Mancala"
+                placeholder="blur"
+              />
               <div className="tech-container">
                 <p className="tech-label">JavaScript</p>
                 <p className="tech-label">HTML</p>
@@ -216,7 +236,12 @@ export default function ProjectsSection() {
             {' '}
             {/* Tic Tac Toe */}
             <div className="project-card-left">
-              <Image src={TicTacToe} className="project-img" alt="Screenshot of Tic Tac Toe" />
+              <Image
+                src={TicTacToe}
+                className="project-img"
+                alt="Screenshot of Tic Tac Toe"
+                placeholder="blur"
+              />
               <div className="tech-container">
                 <p className="tech-label">JavaScript</p>
                 <p className="tech-label">HTML</p>
