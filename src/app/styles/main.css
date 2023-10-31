@@ -539,6 +539,37 @@ textarea:focus {
     .boops {
         top: -35%;
     }
+
+    #projects {
+        margin-top: 10%;
+    }
+
+    .project-card {
+        border-top: 1px solid var(--brown);
+        background-color: var(--dark-brown-1);
+        flex-direction: column-reverse;
+        margin-bottom: 5%;
+    }
+
+
+    h4 {
+        margin: 3% 0 3%;
+    }
+
+    .project-card-left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project-img {
+        height: 30vw;
+    }
+
+    .tech-container {
+        width: 100%;
+        padding: 3% 0 0 5%;
+    }
 }
 
 @media screen and (max-width: 882px) {
@@ -546,13 +577,6 @@ textarea:focus {
         top: -60%;
     }
 
-    .project-card-container {
-        min-height: 45vw;
-    }
-
-    .project-card {
-        min-height: 29vw;
-    }
 
     #email-message {
         top: 43%;

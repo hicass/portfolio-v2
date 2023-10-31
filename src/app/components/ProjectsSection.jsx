@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import WGC from '../../../public/images/wgc.png';
 import TagOps from '../../../public/images/tagops.png';
 import Chirp from '../../../public/images/chirp.png';
 import VintageVault from '../../../public/images/vintagevault.png';
@@ -20,6 +21,60 @@ export default function ProjectsSection() {
       </p>
 
       <div className="project-card-container">
+        <Fade>
+          <div className="project-card">
+            {' '}
+            {/* WGC */}
+            <div className="project-card-left">
+              <Image
+                src={WGC}
+                className="project-img"
+                alt="Screenshot of Whiskered Grapes Co."
+                placeholder="blur"
+              />
+              <div className="tech-container">
+                <p className="tech-label">React</p>
+                <p className="tech-label">Node.js</p>
+                <p className="tech-label">Express.js</p>
+                <p className="tech-label">MongoDB</p>
+                <p className="tech-label">Mongooose</p>
+                <p className="tech-label">CSS</p>
+                <p className="tech-label">Heroku</p>
+              </div>
+            </div>
+            <div>
+              <div className="project-card-right-top">
+                <a
+                  className="project-link-container project-link"
+                  href="https://whiskered-grapes-co-9786d5309a36.herokuapp.com/"
+                  target="_blank"
+                >
+                  Whiskered Grapes Co.
+                  <CgArrowsExpandUpRight />
+                </a>
+                <p className="project-description">
+                  Whiskered Grapes Co. is a digital space for a whimsical wine
+                  venture, managed by the fictional "Pepperoni family." Who
+                  stand out for their quirky ingredients of beards and oregano. I
+                  conceived this project to delve deeper into the world of
+                  React, simultaneously honing my frontend skills.
+                </p>
+              </div>
+
+              <div className="project-card-bottom">
+                <p className="project-date">October 2023</p>
+                <a
+                  className="repo-link"
+                  href="https://github.com/hicass/whiskered-grapes-co"
+                  target="_blank"
+                >
+                  <p className="repo-label">view repo</p>
+                  <BsCodeSlash />
+                </a>
+              </div>
+            </div>
+          </div>
+        </Fade>
         <Fade>
           <div className="project-card">
             {' '}
