@@ -24,6 +24,58 @@ export default function ProjectsSection() {
         <Fade>
           <div className="project-card">
             {' '}
+            {/* Tag Ops */}
+            <div className="project-card-left">
+              <Image
+                src={TagOps}
+                className="project-img"
+                alt="Screenshot of Tag Ops"
+                placeholder="blur"
+              />
+              <div className="tech-container">
+                <p className="tech-label">React</p>
+                <p className="tech-label">JavaScript</p>
+                <p className="tech-label">Email.js</p>
+                <p className="tech-label">CSS</p>
+                <p className="tech-label">Heroku</p>
+              </div>
+            </div>
+            <div>
+              <div className="project-card-right-top">
+                <a
+                  className="project-link-container project-link"
+                  href="https://www.tagoperations.com/"
+                  target="_blank"
+                >
+                  Tag Operations
+                  <CgArrowsExpandUpRight />
+                </a>
+                <p className="project-description">
+                  Solely designed and developed a modern, user-friendly website
+                  for Tag Ops, a company specializing in operational support. I
+                  created a responsive and engaging design that aligns with
+                  the company's personality.
+                </p>
+              </div>
+
+              <div className="project-card-bottom">
+                <p className="project-date">Nov 2023</p>
+                <a
+                  className="repo-link"
+                  href="https://github.com/hicass/tag-ops"
+                  target="_blank"
+                >
+                  <p className="repo-label">view repo</p>
+                  <BsCodeSlash />
+                </a>
+              </div>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade>
+          <div className="project-card">
+            {' '}
             {/* WGC */}
             <div className="project-card-left">
               <Image
@@ -55,8 +107,8 @@ export default function ProjectsSection() {
                 <p className="project-description">
                   Whiskered Grapes Co. is a digital space for a whimsical wine
                   venture, managed by the fictional "Pepperoni family." Who
-                  stand out for their quirky ingredients of beards and oregano. I
-                  conceived this project to delve deeper into the world of
+                  stand out for their quirky ingredients of beards and oregano.
+                  I conceived this project to delve deeper into the world of
                   React, simultaneously honing my frontend skills.
                 </p>
               </div>
@@ -66,55 +118,6 @@ export default function ProjectsSection() {
                 <a
                   className="repo-link"
                   href="https://github.com/hicass/whiskered-grapes-co"
-                  target="_blank"
-                >
-                  <p className="repo-label">view repo</p>
-                  <BsCodeSlash />
-                </a>
-              </div>
-            </div>
-          </div>
-        </Fade>
-        <Fade>
-          <div className="project-card">
-            {' '}
-            {/* Tag Ops */}
-            <div className="project-card-left">
-              <Image
-                src={TagOps}
-                className="project-img"
-                alt="Screenshot of Tag Ops"
-                placeholder="blur"
-              />
-              <div className="tech-container">
-                <p className="tech-label">React</p>
-                <p className="tech-label">JavaScript</p>
-                <p className="tech-label">CSS</p>
-                <p className="tech-label">Heroku</p>
-              </div>
-            </div>
-            <div>
-              <div className="project-card-right-top">
-                <a
-                  className="project-link-container project-link"
-                  href="https://github.com/hicass/tag-ops"
-                  target="_blank"
-                >
-                  Tag Operations
-                </a>
-                <p className="project-description">
-                  Currently designing and developing a modern, user-friendly
-                  website for Tag Ops, a company specializing in operational
-                  support. Implementing responsive design, clear pricing
-                  structures, and seamless user engagement features.
-                </p>
-              </div>
-
-              <div className="project-card-bottom">
-                <p className="project-date">Aug 2023 - present</p>
-                <a
-                  className="repo-link"
-                  href="https://github.com/hicass/tag-ops"
                   target="_blank"
                 >
                   <p className="repo-label">view repo</p>
