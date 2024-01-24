@@ -25,9 +25,6 @@ export default function Nav() {
         <a href="https://www.linkedin.com/in/cass-walters/" target="_blank">
           <AiFillLinkedin />
         </a>
-        <a href="https://www.instagram.com/byeeecass/?hl=en" target="_blank">
-          <AiFillInstagram />
-        </a>
       </div>
     </div>
   );

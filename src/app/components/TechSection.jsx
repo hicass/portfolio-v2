@@ -12,10 +12,6 @@ export default function TechSection() {
     <section id="tech" className="content-area">
       <Slide direction="left" triggerOnce="true" fraction="1">
         <h3>tech</h3>
-
-        <p id="tech-stack-p">
-          These are some of my favorite technologies I've worked with far:
-        </p>
       </Slide>
 
       <Slide direction="right" triggerOnce="true" fraction="1">
