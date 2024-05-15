@@ -33,7 +33,7 @@ body {
     color: var(--white);
     font-family: var(--satoshi);
     font-size: clamp(1rem, 1.8vw, 1.4rem);
-    letter-spacing: 0.18em;
+    letter-spacing: 0.15em;
     height: 100vh;
     overflow-x: hidden;
     transition: all 0.9s;
@@ -310,8 +310,7 @@ h3 {
     padding: 0 3% 3%;
     margin: 0;
     font-size: clamp(1rem, 1.25vw, 2rem);
-    line-height: 1.3em;
-    letter-spacing: 0.2em;
+    line-height: 1.4em;
 }
 
 .project-card-bottom {

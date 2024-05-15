@@ -33,11 +33,11 @@ export default function ProjectsSection() {
                 placeholder="blur"
               />
               <div className="tech-container">
-                <p className="tech-label">React</p>
-                <p className="tech-label">JavaScript</p>
+                <p className="tech-label">Next.js</p>
+                <p className="tech-label">Tailwind CSS</p>
                 <p className="tech-label">Email.js</p>
-                <p className="tech-label">CSS</p>
-                <p className="tech-label">Heroku</p>
+                <p className="tech-label">Framer Motion</p>
+                <p className="tech-label">Vercel</p>
               </div>
             </div>
             <div>
@@ -53,16 +53,16 @@ export default function ProjectsSection() {
                 <p className="project-description">
                   Solely designed and developed a modern, user-friendly website
                   for Tag Ops, a company specializing in operational support. I
-                  created a responsive and engaging design that aligns with
-                  the company's personality.
+                  created a responsive and engaging design that aligns with the
+                  company's personality.
                 </p>
               </div>
 
               <div className="project-card-bottom">
-                <p className="project-date">Nov 2023</p>
+                <p className="project-date">May 2024</p>
                 <a
                   className="repo-link"
-                  href="https://github.com/hicass/tag-ops"
+                  href="https://github.com/hicass/tag-ops-v3"
                   target="_blank"
                 >
                   <p className="repo-label">view repo</p>
@@ -127,61 +127,7 @@ export default function ProjectsSection() {
             </div>
           </div>
         </Fade>
-
-        <Fade>
-          <div className="project-card">
-            {' '}
-            {/* Vintage Vault */}
-            <div className="project-card-left">
-              <Image
-                src={VintageVault}
-                className="project-img"
-                alt="Screenshot of Vintage Vault"
-                placeholder="blur"
-              />
-              <div className="tech-container">
-                <p className="tech-label">Python</p>
-                <p className="tech-label">Django</p>
-                <p className="tech-label">CSS</p>
-                <p className="tech-label">Heroku</p>
-                <p className="tech-label">PostgreSQL</p>
-              </div>
-            </div>
-            <div>
-              <div className="project-card-right-top">
-                <a
-                  className="project-link-container project-link"
-                  href="https://vintagevault.herokuapp.com/"
-                  target="_blank"
-                >
-                  Vintage Vault
-                  <CgArrowsExpandUpRight />
-                </a>
-                <p className="project-description">
-                  Vintage Vault seamlessly connects fashion buyers and sellers,
-                  creating a marketplace for unique fashion pieces. Users can
-                  give their previously loved clothing a new life by easily
-                  creating listings. Working in collaboration with two other
-                  developers during my coding bootcamp, we successfully built
-                  this project within a week.
-                </p>
-              </div>
-
-              <div className="project-card-bottom">
-                <p className="project-date">June 2023</p>
-                <a
-                  className="repo-link"
-                  href="https://github.com/hicass/vintagev"
-                  target="_blank"
-                >
-                  <p className="repo-label">view repo</p>
-                  <BsCodeSlash />
-                </a>
-              </div>
-            </div>
-          </div>
-        </Fade>
-
+        
         <Fade>
           <div className="project-card">
             {' '}
