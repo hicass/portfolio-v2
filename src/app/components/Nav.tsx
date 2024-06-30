@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function Nav() {
   return (
