@@ -19,7 +19,6 @@
 - [React](https://react.dev/)
 - [Next.Js](https://nextjs.org/)
 - [Email.Js](https://www.emailjs.com/)
-- [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
 **Server:** 

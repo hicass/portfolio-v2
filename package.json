@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "engines": {
-    "node": "21.5.0",
+    "node": "20.x",
     "npm": "10.8.1"
   },
   "private": true,
@@ -17,10 +17,14 @@
     "@emotion/react": "^11.11.1",
     "next": "^13.4.19",
     "react": "18.2.0",
-    "react-awesome-reveal": "^4.2.5",
     "react-dom": "18.2.0",
     "react-icons": "^4.12.0",
     "sharp": "^0.32.5",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "typescript": "5.5.2"
   }
 }
