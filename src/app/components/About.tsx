@@ -1,4 +1,6 @@
-export default function AboutSection() {
+import { FC } from 'react';
+
+const AboutSection: FC = () => {
   return (
     <section id="about" className="content-area">
       <h3>about me!</h3>
@@ -26,3 +28,5 @@ export default function AboutSection() {
     </section>
   );
 }
+
+export default AboutSection;

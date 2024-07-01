@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
+'use client';
 
-export default function GlowingCursor() {
+import { useState, useEffect, FC } from 'react';
+
+const GlowingCursor: FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -21,4 +23,6 @@ export default function GlowingCursor() {
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     ></div>
   );
-}
+};
+
+export default GlowingCursor;

@@ -1,14 +1,20 @@
+'use client';
+
+import { useRef, useState, FC } from 'react';
+
 import Image from 'next/image';
-import { useRef, useState } from 'react';
+
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
+
 import botBoops from '../../../public/images/bot-boops.png';
 import botTendrils1 from '../../../public/images/bot-wave-tendrils.png';
 import botTendrils2 from '../../../public/images/bot-tendrils.png';
+
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsSendCheck } from 'react-icons/bs';
 
-export default function ContactSection() {
+const ContactSection: FC = () => {
   const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [emailMessage, setEmailMessage] = useState('');
@@ -150,23 +156,23 @@ export default function ContactSection() {
       <Image
         src={botBoops}
         priority={true}
-        className="bot-boops"
-        id="bot-boops"
-        alt="Background Decorations"
+        className="parallax-bot-boops"
+        id="parallax-bot-boops"
+        alt="Little dots floating whimsicaly whimsically"
       />
       <Image
         src={botTendrils1}
         priority={true}
-        className="bot-boops"
-        id="bot-tendrils1"
-        alt="Background Decorations"
+        className="parallax-bot-boops"
+        id="parallax-bot-tendrils1"
+        alt="Smoke like lines appear behind the floating dots in a wavy pattern"
       />
       <Image
         src={botTendrils2}
         priority={true}
-        className="bot-boops"
-        id="bot-tendrils2"
-        alt="Background Decorations"
+        className="parallax-bot-boops"
+        id="parallax-bot-tendrils2"
+        alt="Smoke like lines appear behind the wavy lines in a more steady fashion"
       />
 
       <p id="credit-text">
@@ -180,3 +186,5 @@ export default function ContactSection() {
     </section>
   );
 }
+
+export default ContactSection;
