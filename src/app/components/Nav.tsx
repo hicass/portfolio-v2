@@ -1,6 +1,7 @@
+import { FC } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-export default function Nav() {
+const Nav: FC = () => {
   return (
     <div id="nav-container">
       <nav>
@@ -29,3 +30,5 @@ export default function Nav() {
     </div>
   );
 }
+
+export default Nav;
