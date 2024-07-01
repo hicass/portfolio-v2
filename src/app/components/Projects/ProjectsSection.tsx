@@ -1,17 +1,32 @@
+'use client';
+
 import { FC } from 'react';
+
+import { motion } from 'framer-motion';
 
 import ProjectCards from './ProjectCards';
 
 const ProjectsSection: FC = () => {
   return (
     <section id="projects" className="content-area">
-      <h3 id="projects-title">projects</h3>
+      <motion.h3
+        id="projects-title"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        projects
+      </motion.h3>
 
-      <p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         Here's a collection of the web development projects I've crafted and
         designed—a journey through my skills, creativity, and growth as a
         developer.
-      </p>
+      </motion.p>
 
       <div className="project-card-container">
         <ProjectCards />
