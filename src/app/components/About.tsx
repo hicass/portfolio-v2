@@ -1,10 +1,26 @@
+'use client';
+
 import { FC } from 'react';
+
+import { motion } from 'framer-motion';
 
 const AboutSection: FC = () => {
   return (
     <section id="about" className="content-area">
-      <h3>about me!</h3>
-      <div id="about-contents">
+      <motion.h3
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        about me!
+      </motion.h3>
+
+      <motion.div
+        id="about-contents"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <p className="about-me-p">
           Creativity is at the heart of everything I do. I view coding as an art
           form, where every line of code has the potential to be elegant and
@@ -24,9 +40,9 @@ const AboutSection: FC = () => {
           quality time with my dog and partner, and diving into the immersive
           worlds of video games when it’s time to unwind.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
-}
+};
 
 export default AboutSection;

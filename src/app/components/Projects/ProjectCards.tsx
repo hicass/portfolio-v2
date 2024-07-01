@@ -1,6 +1,9 @@
-import { FC } from 'react';
+'use client';
 
+import { FC } from 'react';
 import Image from 'next/image';
+
+import { motion, Variants } from 'framer-motion';
 
 import { CgArrowsExpandUpRight } from 'react-icons/cg';
 import { BsCodeSlash } from 'react-icons/bs';
@@ -90,11 +93,37 @@ const projects: Project[] = [
   },
 ];
 
+const cardVariants: Variants = {
+  offscreen: {
+    y: 200,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
+
 const ProjectCard: FC = () => {
   return (
     <>
       {projects.map((project, idx) => (
-        <div className="project-card" key={idx}>
+        <motion.div
+          className="project-card"
+          key={idx}
+          variants={cardVariants}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{
+            once: true,
+            amount: 0.4,
+          }}
+        >
           <div className="project-card-left">
             <Image
               src={project.imagePath}
@@ -134,7 +163,7 @@ const ProjectCard: FC = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </>
   );
