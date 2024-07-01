@@ -280,8 +280,7 @@ h3 {
 }
 
 .project-img {
-  height: 17vw;
-  width: fit-content;
+  width: 100%;
   border-radius: 5px;
 }
 
