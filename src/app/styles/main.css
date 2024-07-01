@@ -676,7 +676,8 @@ textarea:focus {
   }
 
   .project-img {
-    height: 45vw;
+    height: 50vw;
+    width: 100%;
   }
 
   .tech-container {
