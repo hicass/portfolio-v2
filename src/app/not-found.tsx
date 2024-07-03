@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import Link from 'next/link';
 
-import './styles/main.css';
+import './main.css';
 
-const NotPage: FC = () => {
+const NotFoundPage: FC = () => {
   return (
     <section className="content-area">
       <h3>Ooopsiez! Nothing here...</h3>
@@ -13,4 +13,4 @@ const NotPage: FC = () => {
   );
 };
 
-export default NotPage;
+export default NotFoundPage;

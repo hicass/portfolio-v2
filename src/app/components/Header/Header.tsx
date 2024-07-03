@@ -10,6 +10,8 @@ import boops from '../../../../public/images/boops.png';
 import tendrils1 from '../../../../public/images/wave-tendrils.png';
 import tendrils2 from '../../../../public/images/tendrils.png';
 
+import './Header.css';
+
 const Header: FC = () => {
   const [intro, setIntro] = useState(true);
 

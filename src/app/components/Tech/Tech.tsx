@@ -11,6 +11,8 @@ import { BiLogoNodejs } from 'react-icons/bi';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
 import { IconType } from 'react-icons';
 
+import './Tech.css';
+
 type Tech = {
   name: string;
   icon: IconType;
