@@ -8,6 +8,8 @@ import { motion, Variants } from 'framer-motion';
 import { CgArrowsExpandUpRight } from 'react-icons/cg';
 import { BsCodeSlash } from 'react-icons/bs';
 
+import './Projects.css';
+
 type Project = {
   title: string;
   description: string;

@@ -1,14 +1,13 @@
 import { FC } from 'react';
 
 import Header from './components/Header/Header';
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 import About from './components/About';
-import Tech from './components/Tech';
-import Projects from './components/Projects/ProjectsSection';
-import Contact from './components/Contact';
-import GlowingCursor from './components/GlowingCursor';
-
-import './styles/main.css';
+import Tech from './components/Tech/Tech';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import GlowingCursor from './components/GlowingCursor/GlowingCursor';
+import './main.css';
 
 const Home: FC = () => {
   return (

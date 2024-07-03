@@ -6,6 +6,8 @@ import { motion, Variants } from 'framer-motion';
 
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
+import './Nav.css';
+
 const slideInLVars: Variants = {
   offscreen: {
     x: -10,

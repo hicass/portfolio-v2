@@ -5,7 +5,7 @@
   hicass.dev - v2
 </h1>
 <p align='center'>
-  The second version of <a href='https://www.hicass.dev/' target='_blank'>hicass.dev</a> built with <a href='https://nextjs.org/' target='_blank'>Next.js</a> and hosted with <a href='https://www.heroku.com/' target='_blank'>Heroku</a>
+  The second version of <a href='https://www.hicass.dev/' target='_blank'>hicass.dev</a> built with <a href='https://nextjs.org/' target='_blank'>Next.js</a> and hosted with <a href='https://vercel.com/' target='_blank'>Vercel</a>
 </p>
 
 <div align='center'>
@@ -25,7 +25,7 @@
 - [Node](https://nodejs.org/en)
 
 **Deployment:**
-- [Heroku](https://www.heroku.com/)
+- [Vercel](https://vercel.com/)
 
 ## Color Reference
 
@@ -48,48 +48,6 @@ There are other colors in between these that were used, please view the main.css
 - Responsive Design.
 - Contact form with email verification and sent confirmation message.
 
+## Roadmap
 
-## Demo
-
-![Top of Page](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmptMWkzYmxnMmEwZzB5MmxzbmRvNzg2Z2o5ZjN6bmNieGxlcXc3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kiZZdKTFBHaET3bF3B/giphy.gif)
-
-![Website Content](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWhpN2F6MGp4NGRoeG4wNXJwaWc5NWM5ZHo4Nm1raWV0NXFsdnJqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F9RmQdpiSCjehZwRvg/giphy.gif)
-
-![Contact Form](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlhejY3NHMyZWQzejVkMDV2emJmajkzdzlkZmo2Ym5sNWlsMDh6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tJOav7aSkkhbGGfD5Y/giphy.gif)
-
-
-## Environment Variables
-
-To get the contact form to work using [Email.Js](https://www.emailjs.com/), you will need to add the following environment variables to your .env file
-
-`NEXT_PUBLIC_EMAIL_KEY`
-
-If you have an Email.Js account you can use thid variable to reference your Public Key that can be found in your user profile.
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/hicass/portfolio-v2.git
-```
-
-Go to the project directory
-
-```bash
-  cd portfolio-v2
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
+- Simplify and polish styling using Tailwind CSS

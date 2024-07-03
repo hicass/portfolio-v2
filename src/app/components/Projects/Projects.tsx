@@ -5,8 +5,9 @@ import { FC } from 'react';
 import { motion } from 'framer-motion';
 
 import ProjectCards from './ProjectCards';
+import './Projects.css'
 
-const ProjectsSection: FC = () => {
+const Projects: FC = () => {
   return (
     <section id="projects" className="content-area">
       <motion.h3
@@ -35,4 +36,4 @@ const ProjectsSection: FC = () => {
   );
 };
 
-export default ProjectsSection;
+export default Projects;

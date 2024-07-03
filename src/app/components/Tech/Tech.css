@@ -1,0 +1,48 @@
+#tech {
+  margin-bottom: 10%;
+}
+
+#tech-stack-p {
+  margin: 0;
+}
+
+.skill-icon-container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-name {
+  align-items: center;
+  display: flex;
+  margin-top: 7%;
+  text-align: center;
+  font-size: clamp(0.8rem, 1.4vw, 3rem);
+}
+
+.tech-pair-container {
+  display: flex;
+  border: 1px solid green;
+  width: fit-content;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(0.8rem, 5vw, 4rem);
+  justify-content: center;
+  margin: 2% 6%;
+  width: fit-content;
+}
+
+
+/* ------ Media Queries ------- */
+
+
+@media screen and (max-width: 768px) {
+  .icon-container {
+    font-size: clamp(2rem, 7vw, 3.3rem);
+  }
+}

@@ -2,6 +2,8 @@
 
 import { useState, useEffect, FC } from 'react';
 
+import './GlowingCursor.css';
+
 const GlowingCursor: FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 

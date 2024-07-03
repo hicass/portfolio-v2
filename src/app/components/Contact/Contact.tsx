@@ -7,12 +7,14 @@ import Image from 'next/image';
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
 
-import botBoops from '../../../public/images/bot-boops.png';
-import botTendrils1 from '../../../public/images/bot-wave-tendrils.png';
-import botTendrils2 from '../../../public/images/bot-tendrils.png';
-
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsSendCheck } from 'react-icons/bs';
+
+import botBoops from '../../../../public/images/bot-boops.png';
+import botTendrils1 from '../../../../public/images/bot-wave-tendrils.png';
+import botTendrils2 from '../../../../public/images/bot-tendrils.png';
+import './Contact.css'
+
 
 const ContactSection: FC = () => {
   const form = useRef();
