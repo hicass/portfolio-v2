@@ -106,6 +106,21 @@ a:hover {
 /* ------ Top of the page ------- */
 
 
+#loading-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-txt {
+  text-align: center;
+}
+
+
+/* ------ Top of the page ------- */
+
+
 #top {
   align-items: flex-start;
   display: flex;

@@ -17,7 +17,7 @@ const slideInLVars: Variants = {
     transition: {
       type: 'spring',
       bounce: 0.4,
-      duration: 1.2,
+      duration: 3.5,
     },
   },
 };
@@ -33,7 +33,7 @@ const slideInRVars: Variants = {
     transition: {
       type: 'spring',
       bounce: 0.4,
-      duration: 1.2,
+      duration: 3.5,
     },
   },
 };
